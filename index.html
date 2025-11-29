@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora VueJS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Calculadora</h1>
+
+    <div class="calc-container">
+      <input type="number" v-model.number="num1" placeholder="Número 1">
+      <select v-model="operacao">
+        <option value="soma">+</option>
+        <option value="subtracao">-</option>
+        <option value="multiplicacao">×</option>
+        <option value="divisao">÷</option>
+      </select>
+      <input type="number" v-model.number="num2" placeholder="Número 2">
+    </div>
+
+    <div class="resultado">
+      <p>Resultado: <strong>0</strong></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
